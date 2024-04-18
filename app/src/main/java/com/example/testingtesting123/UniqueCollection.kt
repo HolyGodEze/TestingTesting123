@@ -8,17 +8,17 @@ class UniqueCollection {
             collection.add(item)
     }
 
-    fun get (position: Int) = collection[position]
+    operator fun get (position: Int) = collection[position]
 
     fun remove (item: Item){
         !collection.remove(item)
     }
 
     fun clear () {
-
+        collection.clear()
     }
 
     fun size() = collection.size
 
-
+    fun contains(item : Item) = collection.contains(item)
 }
